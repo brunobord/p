@@ -416,6 +416,7 @@ install() {
 
     log compile $version
     make &> /dev/null
+    ln -sf python python.exe
 
     if [ ! -f "python.exe" ]; then
     	abort "Unable to compile Python $version!"
